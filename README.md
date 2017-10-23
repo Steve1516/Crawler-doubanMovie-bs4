@@ -7,11 +7,8 @@
 媳妇不让总去电影院，去一次得磨半天...<\br>
 正好用爬虫练个手，找找最热门的电影，关注下近期上映情况！
 ```
-排序未完成...
 
 `代码如下`
-
-
 
 ```Python
 
@@ -27,7 +24,7 @@ nowplaying_movie_list = nowplaying_movie[0].find_all('li', class_ = 'list-item')
 
 import datetime
 
-print('爬虫正在工作：', end='')
+print('爬虫正在工作：')
 
 nowplaying_list = []
 for item in nowplaying_movie_list:
@@ -55,7 +52,7 @@ for item in nowplaying_movie_list:
     except:
         nowplaying_dict['rating'] = '无评论'
 
-    print('.', end='')
+    print('Getting Date--> ' + nowplaying_dict['name'])
 
     nowplaying_list.append(nowplaying_dict)
 
@@ -70,9 +67,9 @@ for element in nowplaying_list:
 
 print('\n已上映电影（按评分和观影人数排名）：')
 count = 0
-playing_movie = sorted(playing_movie, key=lambda e: (e.__getitem__('rating'), e.__getitem__('score')), reverse=True)
+playing_movie.sort(key=lambda x: (x.get('score', 0), x.get('rating', 0)), reverse=True)
 for element in playing_movie:
-    print('排名：%-3d ；电影名称：%s ；评分：%.1f ；观影人数：%d'%(count,element['name'],element['score'],element['rating']))
+    print('排名：%d ；电影名称：%s ；评分：%.1f ；观影人数：%d'%(count,element['name'],element['score'],element['rating']))
     count += 1
 
 print('\n未上映电影：')
