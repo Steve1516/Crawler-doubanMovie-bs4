@@ -52,7 +52,7 @@ for item in nowplaying_movie_list:
     except:
         nowplaying_dict['rating'] = '无评论'
 
-    print('Getting Date--> ' + nowplaying_dict['name'])
+    print('Getting Data--> ' + nowplaying_dict['name'])
 
     nowplaying_list.append(nowplaying_dict)
 
@@ -83,43 +83,43 @@ for element in pre_playing_movie:
 ```
 运行结果：（2017-10-24）
 爬虫正在工作：
-Getting Date--> 王牌特工2：黄金圈
-Getting Date--> 情比山高
-Getting Date--> 童话先生
-Getting Date--> 羞羞的铁拳
-Getting Date--> 全球风暴
-Getting Date--> 天才枪手
-Getting Date--> 银翼杀手2049
-Getting Date--> 十八洞村
-Getting Date--> 追龙
-Getting Date--> 缝纫机乐队
-Getting Date--> 常在你左右
-Getting Date--> 我的爸爸是森林之王
-Getting Date--> 恐怖电影院2
-Getting Date--> 火力全开
-Getting Date--> 英伦对决
-Getting Date--> 时间去哪儿了
-Getting Date--> 蝴蝶公墓
-Getting Date--> 空天猎
-Getting Date--> 战狼2
-Getting Date--> 怨灵2
-Getting Date--> 胡杨的夏天
-Getting Date--> 坑爹游戏
-Getting Date--> 看不见的客人
-Getting Date--> 情遇曼哈顿
-Getting Date--> 因为爱情
-Getting Date--> 回到火星
-Getting Date--> 请爱我的女朋友
-Getting Date--> 极致追击
-Getting Date--> 你若安好
-Getting Date--> 七十七天
-Getting Date--> 智取威虎山
-Getting Date--> 捍卫者
-Getting Date--> 二十二
-Getting Date--> 海边的曼彻斯特
-Getting Date--> 六年，六天
-Getting Date--> 昆塔：反转星球
-Getting Date--> 大爱无言
+Getting Data--> 王牌特工2：黄金圈
+Getting Data--> 情比山高
+Getting Data--> 童话先生
+Getting Data--> 羞羞的铁拳
+Getting Data--> 全球风暴
+Getting Data--> 天才枪手
+Getting Data--> 银翼杀手2049
+Getting Data--> 十八洞村
+Getting Data--> 追龙
+Getting Data--> 缝纫机乐队
+Getting Data--> 常在你左右
+Getting Data--> 我的爸爸是森林之王
+Getting Data--> 恐怖电影院2
+Getting Data--> 火力全开
+Getting Data--> 英伦对决
+Getting Data--> 时间去哪儿了
+Getting Data--> 蝴蝶公墓
+Getting Data--> 空天猎
+Getting Data--> 战狼2
+Getting Data--> 怨灵2
+Getting Data--> 胡杨的夏天
+Getting Data--> 坑爹游戏
+Getting Data--> 看不见的客人
+Getting Data--> 情遇曼哈顿
+Getting Data--> 因为爱情
+Getting Data--> 回到火星
+Getting Data--> 请爱我的女朋友
+Getting Data--> 极致追击
+Getting Data--> 你若安好
+Getting Data--> 七十七天
+Getting Data--> 智取威虎山
+Getting Data--> 捍卫者
+Getting Data--> 二十二
+Getting Data--> 海边的曼彻斯特
+Getting Data--> 六年，六天
+Getting Data--> 昆塔：反转星球
+Getting Data--> 大爱无言
 
 已上映电影（按评分和观影人数排名）：
 排名：0 ；电影名称：二十二 ；评分：8.8 ；观影人数：81883
