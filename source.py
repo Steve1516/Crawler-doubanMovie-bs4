@@ -1,4 +1,4 @@
-```Python
+```python
 
 from urllib import request
 movie_list_resp = request.urlopen('https://movie.douban.com/nowplaying/hangzhou/')
