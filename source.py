@@ -1,5 +1,3 @@
-```python
-
 from urllib import request
 movie_list_resp = request.urlopen('https://movie.douban.com/nowplaying/hangzhou/')
 movie_list_html_data = movie_list_resp.read().decode('utf-8')
@@ -63,5 +61,3 @@ for element in playing_movie:
 print('\n未上映电影：')
 for element in pre_playing_movie:
     print('电影名称：%-s ；上映时间：%s'%(element['name'],str(element['data'])[:10]))
-
-```
